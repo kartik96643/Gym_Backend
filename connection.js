@@ -6,6 +6,7 @@ async function connectToMongo() {
     try{
 
          mongoose.connect(process.env.mongoURI)
+        console.log("Connected")
     }
     catch{
         process.exit(1);
